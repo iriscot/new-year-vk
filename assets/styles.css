@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('./New-Year-Bangkok-Fireworks-2016-Wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: grid;
+}
+
+.app {
+    background-color: #fff;
+    margin: auto;
+    width: 600px;
+    padding: 1.2%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+.infoline {
+    margin-bottom: 10px;
+}
+
+.infoline__value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.circleIndicator {
+    width: 10px;
+    height: 10px;
+    background-color: #676767;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+
+.circleIndicator.success {
+    background-color: #43A047;
+}
+
+.circleIndicator.error {
+    background-color: #D81B60;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65);
+    /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60);
+    /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20);
+    /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221);
+    /* this is a light blue */
+}
+
+
+.vkmessage_preview {
+    margin: 18px 0;
+    display: grid;
+    grid-template-areas:
+        "vk_avatar vk_username"
+        ". vk_text";
+    grid-template-columns: 36px auto;
+    grid-template-rows: 17px auto;
+    grid-column-gap: 10px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif;
+    line-height: 1.154;
+    font-weight: 400;
+}
+
+.vkmessage_preview__avatar {
+    grid-area: vk_avatar;
+}
+
+.vkmessage_preview__avatar img {
+    width: 36px;
+    border-radius: 50%;
+}
+
+.vkmessage_preview__username {
+    grid-area: vk_username;
+    color: #42648b;
+    font-weight: 700;
+}
+
+.vkmessage_preview__text {
+    grid-area: vk_text;
+}

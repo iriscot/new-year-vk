@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Отправка поздравлений!</title>
+
+    <link rel="stylesheet" href="./vendor/pure-release-1.0.1/pure-min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <script src="./vendor/moment.min.js" charset="utf-8"></script>
+    <script src="./vendor/jquery-3.4.1.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="screens">
+            <div class="screen" id="screen-main">
+                <div class="l-box lifehacks">
+                    <button class="button-success pure-button" onclick="start()">Начать</button>
+                    <button class="pure-button" onclick="testfire()">Проверить отправку</button>
+                </div>
+                <div class="infoline infoline--indicator" id="info-status">
+                    <span class="infoline__caption"><span class="circleIndicator error"></span></span>
+                    <span class="infoline__value">Скрипт не запущен</span>
+                </div>
+                <div class="infoline infoline--indicator" id="info-token">
+                    <span class="infoline__caption"><span class="circleIndicator"></span></span>
+                    <span class="infoline__value">Токен проверяется...</span>
+                </div>
+                <div class="infoline" id="info-now">
+                    <span class="infoline__caption">Сейчас</span>
+                    <span class="infoline__value"></span>
+                </div>
+                <div class="infoline" id="info-willsend">
+                    <span class="infoline__caption">Отправим</span>
+                    <span class="infoline__value"></span>
+                </div>
+                <div class="infoline" id="info-remaining">
+                    <span class="infoline__caption">Осталось</span>
+                    <span class="infoline__value"></span>
+                </div>
+                <div class="infoline infoline--multiline" id="info-msgtext">
+                    <span class="infoline__caption">Сообщение</span>
+                    <div class="infoline__value">
+
+                        <div class="vkmessage_preview">
+                            <div class="vkmessage_preview__avatar">
+                                <img alt="юзернейм" src="https://vk.com/images/deactivated_50.png?ava=1">
+                            </div>
+                            <div class="vkmessage_preview__username">username</div>
+                            <div class="vkmessage_preview__text">text</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="infoline" id="info-recipients">
+                    <span class="infoline__caption"></span>
+                    <span class="infoline__value"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/nysend.js" charset="utf-8"></script>
+</body>
+
+</html>
